@@ -69,6 +69,35 @@
 
 \usetikzlibrary{fadings}
 
+\newcommand{\FullBackground}[1]{
+    \begin{tikzpicture}[remember picture, overlay]
+        \node[anchor=north,yshift=1mm,inner sep=0] at (current page.north){\includegraphics[width=1.043\paperwidth]{#1}};
+    \end{tikzpicture}
+}
+
+\newcommand{\BackgroundPattern}[1]{
+    \ifcase#1\relax
+        \FullBackground{TUEAI_Toolkit-Visual_AI-Pattern_01A.pdf}
+    \or
+        \FullBackground{TUEAI_Toolkit-Visual_AI-Pattern_01B.pdf}
+    \or
+        \FullBackground{TUEAI_Toolkit-Visual_AI-Pattern_01C.pdf}
+    \or
+        \FullBackground{TUEAI_Toolkit-Visual_AI-Pattern_02A.pdf}
+    \or
+        \FullBackground{TUEAI_Toolkit-Visual_AI-Pattern_02B.pdf}
+    \or
+        \FullBackground{TUEAI_Toolkit-Visual_AI-Pattern_02C.pdf}
+    \or
+        \FullBackground{TUEAI_Toolkit-Visual_AI-Pattern_03A.pdf}
+    \or
+        \FullBackground{TUEAI_Toolkit-Visual_AI-Pattern_03B.pdf}
+    \or
+        \FullBackground{TUEAI_Toolkit-Visual_AI-Pattern_03C.pdf}
+    \else
+    \fi
+}
+
 \newcommand{\EastGradImage}[2][1]{%
     \begin{tikzpicture}[remember picture,overlay]
         \ifnum#1=1
@@ -140,7 +169,7 @@
 %%%%%%%%%%%%%%%
 
 \RequirePackage{tcolorbox}
-\tcbset{colback=TueAIgray,colframe=TueAIdarkblue, size=small, coltext=TueAIdarkblue}
+\tcbset{colback=TueAIgray,colframe=TueAIdarkblue, size=small, coltext=TueAIdarkblue, arc=0mm}
 \tcbuselibrary{most}
 
 \RequirePackage{listings}

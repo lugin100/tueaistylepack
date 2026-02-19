@@ -1,5 +1,5 @@
 #!/bin/env perl
-ensure_path("TEXINPUTS", "./..//");
+ensure_path("TEXINPUTS", "./..//", "./../../GraphicToolKit/PDF/");
 
 # Use LuaLaTeX
 $pdf_mode = 4;

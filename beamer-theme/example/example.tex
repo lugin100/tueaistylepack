@@ -156,8 +156,41 @@
     \end{ribbon}
 \end{frame}
 
-\begin{darkframe}
+\begin{frame}[plain]
+    % you can use these background patterns from Franziska Schwarz's Graphic Toolkit
+    % instead of a black slide to add breaks to your presentation. 
+    % There are 9 patterns to choose from. Check them out:
+    % \BackgroundPattern{0}
+    \BackgroundPattern{1}
+    % \BackgroundPattern{2}
+    % \BackgroundPattern{3}
+    % \BackgroundPattern{4}
+    % \BackgroundPattern{5}
+    % \BackgroundPattern{6}
+    % \BackgroundPattern{7}
+    % \BackgroundPattern{8}
+\end{frame}
 
+\begin{frame}[plain]
+    \BackgroundPattern{4}
+
+    \begin{center}
+        \begin{tcolorbox}[title={Takeaway slides},colback=white,sidebyside,segmentation empty]
+
+            The background patterns and color boxes offer an alternative to dark slides, if you want to convey a break in the flow of the presentation.\\
+
+            For example, this can be used to present some main takeaway.\\
+
+            Note that the backgrounds are very busy, though. This works best if the takeaway box is large and covers most of the frame. For example, a QR code.
+            \tcblower
+            \begin{center}
+                \includegraphics[width=\textwidth]{qr.png}
+            \end{center}
+        \end{tcolorbox}
+    \end{center}
+\end{frame}
+
+\begin{darkframe}
 
     On dark frames, normal text is white. \alert{Alerted text} remains accented. Darkframes also have a \texttt{\textbackslash{}frametitle} and \texttt{\textbackslash{}framesubtitle}, but their use is not encouraged, to increase visual contrast.
 

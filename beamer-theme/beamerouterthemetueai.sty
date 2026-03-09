@@ -41,6 +41,23 @@
 
 \defbeamertemplate*{footline}{tueai}
 {%
+        \ifbeamer@plainframe\else
+        \ifTueAIDarkFrame
+            \begin{tikzpicture}[remember picture, overlay]
+                \begin{scope}
+                    \filldraw[TueAIaccent] ([xshift=-5mm] current page.south east) -- ++(0,3mm) -- ++(2.5mm,0.75mm) -- ++ (0,-3.75mm) -- cycle;
+                \end{scope}
+            \end{tikzpicture}
+        \else
+            \begin{tikzpicture}[remember picture, overlay]
+                \begin{scope}
+                    \filldraw[TueAIlightblue] ([xshift=-5mm] current page.south east) -- ++(0,3mm) -- ++(2.5mm,0.75mm) -- ++ (0,-3.75mm) -- cycle;
+                \end{scope}
+            \end{tikzpicture}
+        \fi
+    \fi
+
+
     \leavevmode%
     \hbox{%
         \begin{beamercolorbox}[wd=1.001\paperwidth,ht=3ex,dp=1.5ex,leftskip=.3cm,rightskip=.3cm,sep=0pt]{footline}

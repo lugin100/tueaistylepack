@@ -1,5 +1,7 @@
 \RequirePackage{xargs}
 
+\newif\ifTueAIDarkFrame
+
 \usefonttheme{tueai}
 \usecolortheme{tueai}
 
@@ -40,9 +42,12 @@
 % Special Frames %
 %%%%%%%%%%%%%%%%%%
 
+
+
 % Dark Frames
 \newenvironment{darkframe}[1][\@empty]{%
     \begingroup%
+    \TueAIDarkFrametrue%
     \darkcolors%
     \begin{frame}[#1]%}
         \begin{tikzpicture}[remember picture,overlay]

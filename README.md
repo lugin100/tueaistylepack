@@ -9,6 +9,10 @@ The pack currently contains the following LaTeX assets:
  
 These documents have matching style sheets in the [`tueplots`](https://tueplots.readthedocs.io/) python library, which can be used to generate plots that match the style of the documents.
 
+### Reference
+The color scheme, the Tübingen AI Logo, and various other design assets were developed by [Franziska Schwarz](https://www.franziska-schwarz.de). Her style guide can be found in `Design-Manual.pdf` (which is included "all rights reserved", for reference only). The templates contained herein are using her Graphical Toolbox, color scheme, and logo, but the templates are not themselves developed by Franziska Schwarz. If you are affiliated with the AI Center and would like to suggest changes that bring the template closer to her style, please feel invited to do so via a PR. 
+
+
 ## Installation
 
 If you would like to contribute to this repository, please feel free to open an issue or a pull request. In particular, we welcome proposals for templates for posters, and PhD theses.
@@ -70,4 +74,4 @@ The theme uses the [Roboto](https://fonts.google.com/specimen/Roboto) and [+Jaka
 
 This repo is maintained by Philipp Hennig, who also wrote the thesis template. The beamer template is based on an earlier template built by Philipp Hennig and Marvin Pförtner. We are grateful to Peter Nicholas Krämer for maintaining `tueplots`, including the hooks in there for this style pack.
 
-The color scheme, the Tübingen AI Logo, and various other design assets were developed by [Franziska Schwarz](https://www.franziska-schwarz.de). 
+If you would like to contribute, please feel invited to file a PR or an issue. We would be particularly grateful for great templates for PhD theses and posters.

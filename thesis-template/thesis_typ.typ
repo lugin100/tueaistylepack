@@ -126,7 +126,6 @@ Also, we can refer to @tab_example and @fig_gp. A link to an externel document #
 #lorem(1500)
 
 #bibliography("./references.bib")
-\bibliographystyle{plainnat}
 // \bibliography{references}
 //
 // \end{document}

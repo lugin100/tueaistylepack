@@ -253,7 +253,6 @@
         weight: "bold",
         fill: TUdark,
       )
-      )
     ]
     acknowledgments.get()
     pagebreak()

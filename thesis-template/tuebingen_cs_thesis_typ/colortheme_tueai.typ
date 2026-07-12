@@ -8,7 +8,7 @@
 // Primary Colors
 #let TUred = rgb(165, 30, 55)
 #let TUgold = rgb(180, 160, 105)
-#let TUdark = rgb(50, 65, 75) // #32414b
+#let TUdark = rgb(50, 65, 75)
 #let TUgray = rgb(175, 179, 183)
 
 // Secondary Colors

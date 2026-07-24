@@ -4,7 +4,6 @@
 - which pages show header 
 
 ## Things to double check
-- fonts
 - textsizes
 - hardcoded spacings (all eyeballed)
 

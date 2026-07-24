@@ -70,8 +70,17 @@ and that that `icml_2026/` is the working directory (otherwise, execute `cd icml
 
 The theme uses the [Roboto](https://fonts.google.com/specimen/Roboto) and [+Jakarta Sans](https://fonts.google.com/specimen/Plus+Jakarta+Sans) Families (Light, Regular, Medium, etc.). The latter is an open replacement for the Circular font family used in the Tübingen AI Center's corporate design, and can be downloaded for free from [Google Fonts](https://fonts.google.com/) via the links above.
 
+
+## Typst
+
+In addition to latex, this repository also containes a thesis template in typst. 
+With typst installed, simply run 
+```$typst watch thesis-template/thesis_typ.typ --root .. --font-path thesis-template/tuebingen_cs_thesis_typ/fonts
+``` to compile the template
+
+
 ## Contributors
 
-This repo is maintained by Philipp Hennig, who also wrote the thesis template. The beamer template is based on an earlier template built by Philipp Hennig and Marvin Pförtner. We are grateful to Peter Nicholas Krämer for maintaining `tueplots`, including the hooks in there for this style pack.
+This repo is maintained by Philipp Hennig, who also wrote the thesis template. The beamer template is based on an earlier template built by Philipp Hennig and Marvin Pförtner. We are grateful to Peter Nicholas Krämer for maintaining `tueplots`, including the hooks in there for this style pack. Bileam Scheuvens and Luis Gindorf created the created the typst version of the template.
 
 If you would like to contribute, please feel invited to file a PR or an issue. We would be particularly grateful for great templates for PhD theses and posters.

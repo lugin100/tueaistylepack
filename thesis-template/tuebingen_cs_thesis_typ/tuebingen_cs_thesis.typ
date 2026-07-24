@@ -57,11 +57,13 @@
   // could also color citations like latex, but this highlights the parenthesis around it too
   // show cite: it => underline(text(fill: TueAIlightblue, it))
 
-
+  set text(
+    font: "CMU Serif"
+  )
   set heading(numbering: "1.1")
 
   show heading.where(level: 1): it => {
-    set text(font: "TeX Gyre Heros", weight: "bold", size: 22pt, fill: TueAIdarkblue)
+    set text(font: "CMU Sans Serif", weight: "bold", size: 22pt, fill: TueAIdarkblue)
     v(4em)
     if it.numbering != none [
       Chapter #counter(heading).display(it.numbering)
@@ -74,7 +76,7 @@
 
   // Section = heading level 2 (run-in style, number + space + title)
   show heading.where(level: 2): it => {
-    set text(font: "TeX Gyre Heros", weight: "bold", size: 16pt, fill: TueAIdarkblue)
+    set text(font: "CMU Sans Serif", weight: "bold", size: 16pt, fill: TueAIdarkblue)
     v(0.4em)
     if it.numbering != none [
       #counter(heading).display(it.numbering) #h(1em)
@@ -85,7 +87,7 @@
   // Subsection = heading level 3
   show heading.where(level: 3): it => {
     v(0.4em)
-    set text(font: "TeX Gyre Heros", weight: "bold", size: 12pt, fill: TueAIdarkblue)
+    set text(font: "CMU Sans Serif", weight: "bold", size: 12pt, fill: TueAIdarkblue)
     if it.numbering != none [
       #counter(heading).display(it.numbering) #h(1em)
     ]
@@ -95,7 +97,7 @@
   // Captions in sans (small)
   // -----------------------------------------------------------------------
   show figure.caption: it => {
-    set text(font: "Libertinus Sans", size: 9pt) // \small
+    set text(font: "CMU Sans Serif", size: 9pt) // \small
     it
   }
 
@@ -111,7 +113,7 @@
       if chapter-start-pages.contains(pg) or pg < 3 {
         none
       } else {
-        set text(font: "New Computer Modern", fill: TueAIdarkblue, size: 9pt)
+        set text(font: "CMU Sans Serif", fill: TueAIdarkblue, size: 9pt)
         grid(
           columns: (1fr, 1fr),
           align(left)[
